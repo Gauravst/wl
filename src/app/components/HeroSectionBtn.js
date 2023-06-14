@@ -13,7 +13,7 @@ export default function HeroSectionBtn() {
     } else {
       setUser(false);
     }
-  });
+  },[session?.status]);
 
   return (
     <>

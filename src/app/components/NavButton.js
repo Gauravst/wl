@@ -13,7 +13,7 @@ export default function NavButton() {
     } else {
       setUser(false);
     }
-  });
+  }, [session?.status]);
 
   return (
     <>

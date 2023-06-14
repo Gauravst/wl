@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 
-export default function page() {
+export default function Page() {
   return (
     <>
     <div>

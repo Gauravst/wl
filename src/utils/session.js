@@ -3,7 +3,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
-export const checkSession = () => {
+export const CheckSession = () => {
   const session = useSession();
 
   useEffect(() => {
@@ -15,7 +15,7 @@ export const checkSession = () => {
   });
 }
 
-export const checkSessionRoute = (rout) => {
+export const CheckSessionRoute = (rout) => {
   const router = useRouter()
   const session = useSession();
 

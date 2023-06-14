@@ -3,10 +3,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { toast } from "react-hot-toast";
-import { checkSessionRoute } from "@/utils/session";
+import { CheckSessionRoute } from "@/utils/session";
 
 export default function LoginForm() {
-  checkSessionRoute("/dashboard");
+  CheckSessionRoute("/dashboard");
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState({
     email: "",

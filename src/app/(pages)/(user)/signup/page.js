@@ -2,10 +2,10 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { checkSessionRoute } from "@/utils/session";
+import { CheckSessionRoute } from "@/utils/session";
 
-export default function page() {
-  checkSessionRoute("/dashboard");
+export default function Page() {
+  CheckSessionRoute("/dashboard");
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState({
